@@ -1,0 +1,28 @@
+package com.example.diseno.CU17.Entities.state;
+
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Service;
+
+@Service
+@NoArgsConstructor()
+public class Finalizada extends State{
+    @Override
+    public boolean esIniciada() {
+        return false;
+    }
+
+    @Override
+    public boolean esEnCurso() {
+        return false;
+    }
+
+    @Override
+    public boolean esTomada() {
+        return false;
+    }
+
+    @Override
+    public boolean esFinalizada() {
+        return true;
+    }
+}
